@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imgPerson"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imgview_border"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nguyễn Tuấn Anh"
+        app:layout_constraintStart_toEndOf="@id/imgPerson"
+        app:layout_constraintTop_toTopOf="@id/imgPerson"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0981430602"
+        app:layout_constraintStart_toEndOf="@id/imgPerson"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/imgPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/tvPhoneNumber"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_message"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/imgPhone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
